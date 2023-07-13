@@ -13,11 +13,19 @@ class App extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch(
-          backgroundColor: const Color.fromARGB(255, 188, 168, 169),
+          backgroundColor: const Color(0xFF000000),
         ),
         textTheme: const TextTheme(
           titleLarge: TextStyle(
-            color: Color(0xFF232B55),
+            color: Color(0xFFC0C0C0),
+          ),
+          bodyMedium: TextStyle(
+            fontSize: 20,
+            height: 1.5,
+            color: Color(0xFFC0C0C0),
+          ),
+          labelLarge: TextStyle(
+            color: Color(0xFF6C5DD3),
           ),
         ),
       ),
