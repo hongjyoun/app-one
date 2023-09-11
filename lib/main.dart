@@ -1,3 +1,4 @@
+import 'package:app_one/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,11 +12,14 @@ class GameOneApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Tiktok Clone',
+      title: 'App One',
       theme: ThemeData(
-        primaryColor: const Color(0xFFE9435A),
+        canvasColor: const Color(0xFF443444),
+        focusColor: const Color(0xFF220523),
+        primaryColor: const Color(0xFF8B0535),
+        primaryColorDark: const Color(0xFF550E27),
       ),
-      home: Container(),
+      home: const HomeScreen(),
     );
   }
 }
