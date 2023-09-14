@@ -13,27 +13,29 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).canvasColor,
-      body: const SafeArea(
-        child: Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: Sizes.size20,
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                height: 350,
+      body: Stack(
+        children: [
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/images/background.png'),
+                fit: BoxFit.cover,
               ),
+            ),
+          ),
+          const Row(
+            children: [
               Text(
-                "벌써 밤 11시, \n막차가 끊기기 전에 \n집으로 갈까?",
+                '회사밖은\n위험해',
                 style: TextStyle(
+                  fontFamily: 'Ramche',
+                  fontSize: Sizes.size28,
                   color: Colors.white,
-                  fontSize: Sizes.size24,
                 ),
               ),
             ],
-          ),
-        ),
+          )
+        ],
       ),
     );
   }
