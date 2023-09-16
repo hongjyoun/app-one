@@ -1,5 +1,8 @@
 import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
+import 'package:app_one/functions/navigator_on_push.dart';
+import 'package:app_one/screens/stories/story_201.dart';
+import 'package:app_one/screens/stories/story_202.dart';
 import 'package:app_one/screens/widgets/content_text.dart';
 import 'package:app_one/screens/widgets/round_icon_button.dart';
 import 'package:app_one/screens/widgets/select_text_button.dart';
@@ -43,15 +46,22 @@ class Story100 extends StatelessWidget {
                   color: Theme.of(context).primaryColor,
                 ),
               ),
-              const Padding(
-                  padding: EdgeInsets.symmetric(vertical: Sizes.size20),
-                  child: Column(
-                    children: [
-                      SelectTextButton(text: "안되겠다, 그냥 밤을 새자"),
-                      Gaps.v20,
-                      SelectTextButton(text: "짐을 챙겨서 퇴근하자"),
-                    ],
-                  )),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: Sizes.size20),
+                child: Column(
+                  children: [
+                    SelectTextButton(
+                      text: "안되겠다, 그냥 밤을 새자",
+                      onTap: () => navigatorOnPush(context, const Story201()),
+                    ),
+                    Gaps.v20,
+                    SelectTextButton(
+                      text: "짐을 챙겨서 퇴근하자",
+                      onTap: () => navigatorOnPush(context, const Story202()),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
