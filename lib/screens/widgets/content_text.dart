@@ -13,11 +13,11 @@ class ContentText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: const TextStyle(
+      style: TextStyle(
         fontFamily: 'Stardust',
         fontSize: Sizes.size32,
         fontWeight: FontWeight.bold,
-        color: Color(0xFFEB5C5C),
+        color: Theme.of(context).primaryColor,
         height: 1.7,
       ),
     );

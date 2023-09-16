@@ -18,9 +18,9 @@ class SelectTextButton extends StatelessWidget {
           vertical: Sizes.size14,
           horizontal: Sizes.size16,
         ),
-        decoration: const BoxDecoration(
-          color: Color(0xFF220523),
-          borderRadius: BorderRadius.all(
+        decoration: BoxDecoration(
+          color: Theme.of(context).focusColor,
+          borderRadius: const BorderRadius.all(
             Radius.circular(Sizes.size20),
           ),
         ),

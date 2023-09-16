@@ -19,7 +19,7 @@ class GameOneApp extends StatelessWidget {
       theme: ThemeData(
         canvasColor: const Color(0xFF443444),
         focusColor: const Color(0xFF220523),
-        primaryColor: const Color(0xFF8B0535),
+        primaryColor: const Color(0xFFEB5C5C),
         primaryColorDark: const Color(0xFF550E27),
       ),
       home: const HomeScreen(),
