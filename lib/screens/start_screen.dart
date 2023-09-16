@@ -1,4 +1,8 @@
+import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
+import 'package:app_one/screens/widgets/content_text.dart';
+import 'package:app_one/screens/widgets/round_icon_button.dart';
+import 'package:app_one/screens/widgets/select_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -13,28 +17,14 @@ class StartScreen extends StatelessWidget {
         elevation: 0,
         toolbarHeight: 100,
         // automaticallyImplyLeading: false,
-        actions: [
+        actions: const [
           Padding(
-            padding: const EdgeInsets.all(Sizes.size20),
+            padding: EdgeInsets.all(Sizes.size20),
             child: Row(
               children: [
-                InkWell(
-                  onTap: () {
-                    // 아이콘 버튼을 눌렀을 때 수행할 작업
-                  },
-                  customBorder: const CircleBorder(),
-                  child: Container(
-                    width: Sizes.size48, // 원하는 크기로 조정
-                    height: Sizes.size48,
-                    decoration: const BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.black,
-                    ),
-                    child: const Center(
-                      child:
-                          FaIcon(FontAwesomeIcons.ghost, color: Colors.white),
-                    ),
-                  ),
+                RoundIconButton(
+                  icon: FontAwesomeIcons.ghost,
+                  color: Colors.white,
                 ),
               ],
             ),
@@ -42,7 +32,26 @@ class StartScreen extends StatelessWidget {
         ],
       ),
       body: const SafeArea(
-        child: Text("sldkfjsdlf"),
+        child: Padding(
+          padding: EdgeInsets.all(Sizes.size20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: ContentText(text: "벌써 밤 11시...\n막차가 끊기기 전에\n집으로 갈까?"),
+              ),
+              Padding(
+                  padding: EdgeInsets.symmetric(vertical: Sizes.size20),
+                  child: Column(
+                    children: [
+                      SelectTextButton(text: "sldkfjsldjflksd"),
+                      Gaps.v20,
+                      SelectTextButton(text: "aaaaa"),
+                    ],
+                  )),
+            ],
+          ),
+        ),
       ),
     );
   }

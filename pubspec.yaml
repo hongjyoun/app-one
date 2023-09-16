@@ -78,6 +78,10 @@ flutter:
     - family: Ramche
       fonts:
         - asset: assets/fonts/Ramche.ttf
+    - family: Stardust
+      fonts:
+        - asset: assets/fonts/PFStardust.ttf
+        - asset: assets/fonts/PFStardustBold.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

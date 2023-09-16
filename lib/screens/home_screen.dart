@@ -38,12 +38,12 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Gaps.v80,
                   const Text(
-                    '🏢🧟‍♂️\n회사밖은',
+                    '🧟‍♂️\n회사밖은',
                     style: TextStyle(
                       fontFamily: 'Ramche',
                       fontSize: Sizes.size48,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white70,
+                      color: Colors.white,
                       height: 1.7,
                     ),
                   ),
