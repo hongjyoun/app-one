@@ -44,9 +44,9 @@ class StartScreen extends StatelessWidget {
                   padding: EdgeInsets.symmetric(vertical: Sizes.size20),
                   child: Column(
                     children: [
-                      SelectTextButton(text: "sldkfjsldjflksd"),
+                      SelectTextButton(text: "안되겠다, 그냥 밤을 새자"),
                       Gaps.v20,
-                      SelectTextButton(text: "aaaaa"),
+                      SelectTextButton(text: "짐을 챙겨서 퇴근하자"),
                     ],
                   )),
             ],

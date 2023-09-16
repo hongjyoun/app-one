@@ -14,7 +14,10 @@ class SelectTextButton extends StatelessWidget {
     return FractionallySizedBox(
       widthFactor: 1,
       child: Container(
-        padding: const EdgeInsets.all(Sizes.size14),
+        padding: const EdgeInsets.symmetric(
+          vertical: Sizes.size14,
+          horizontal: Sizes.size16,
+        ),
         decoration: const BoxDecoration(
           color: Color(0xFF220523),
           borderRadius: BorderRadius.all(
