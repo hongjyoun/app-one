@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 
 class ContentText extends StatelessWidget {
   final String text;
+  final Color? color;
 
   const ContentText({
     super.key,
     required this.text,
+    this.color,
   });
 
   @override
@@ -17,7 +19,7 @@ class ContentText extends StatelessWidget {
         fontFamily: 'Stardust',
         fontSize: Sizes.size32,
         fontWeight: FontWeight.bold,
-        color: Theme.of(context).primaryColor,
+        color: color ?? Theme.of(context).primaryColor,
         height: 1.7,
       ),
     );
