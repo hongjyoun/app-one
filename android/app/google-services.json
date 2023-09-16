@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "739493055562",
+    "project_id": "hongjyoun-app-one",
+    "storage_bucket": "hongjyoun-app-one.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739493055562:android:4988801de01992b4b66ab3",
+        "android_client_info": {
+          "package_name": "com.example.app_one"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVh-GtYWUMWgqLOaG1EPpd-bhs0Mm00Es"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
