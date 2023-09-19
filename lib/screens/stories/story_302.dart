@@ -1,14 +1,16 @@
+import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
 import 'package:app_one/screens/stories/story_301.dart';
+import 'package:app_one/screens/stories/story_303.dart';
 import 'package:app_one/screens/widgets/content_text.dart';
 import 'package:app_one/screens/widgets/round_icon_button.dart';
 import 'package:app_one/screens/widgets/select_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class Story201 extends StatelessWidget {
-  const Story201({super.key});
+class Story302 extends StatelessWidget {
+  const Story302({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +42,7 @@ class Story201 extends StatelessWidget {
             children: [
               Expanded(
                 child: ContentText(
-                  text: "밤 12시,\n일이 끝났다\n회사에서 자고 가야될것 같다",
+                  text: "[좀비 출몰 뉴스를 확인했습니다]\n응? 뉴스가 사실일까?",
                   color: Theme.of(context).primaryColor,
                 ),
               ),
@@ -49,7 +51,12 @@ class Story201 extends StatelessWidget {
                 child: Column(
                   children: [
                     SelectTextButton(
-                      text: "휴게실로 간다",
+                      text: "가짜뉴스인것같다. 그냥 엘레베이터에 타자",
+                      onTap: () => navigatorOnPush(context, const Story303()),
+                    ),
+                    Gaps.v20,
+                    SelectTextButton(
+                      text: "진짜인것같은데? 믿어볼까? 엘레베이터를 타지 않는다",
                       onTap: () => navigatorOnPush(context, const Story301()),
                     ),
                   ],

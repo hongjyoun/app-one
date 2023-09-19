@@ -1,6 +1,11 @@
+import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
+import 'package:app_one/functions/navigator_on_push.dart';
+import 'package:app_one/screens/stories/story_302.dart';
+import 'package:app_one/screens/stories/story_303.dart';
 import 'package:app_one/screens/widgets/content_text.dart';
 import 'package:app_one/screens/widgets/round_icon_button.dart';
+import 'package:app_one/screens/widgets/select_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -41,11 +46,19 @@ class Story202 extends StatelessWidget {
                   color: Theme.of(context).primaryColor,
                 ),
               ),
-              const Padding(
-                padding: EdgeInsets.symmetric(vertical: Sizes.size20),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: Sizes.size20),
                 child: Column(
                   children: [
-                    // SelectTextButton(text: "휴게실로 간다"),
+                    SelectTextButton(
+                      text: "폰으로 SNS를 확인한다",
+                      onTap: () => navigatorOnPush(context, const Story302()),
+                    ),
+                    Gaps.v20,
+                    SelectTextButton(
+                      text: "거울을 본다",
+                      onTap: () => navigatorOnPush(context, const Story303()),
+                    ),
                   ],
                 ),
               ),
