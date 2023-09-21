@@ -2,11 +2,15 @@ import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/screens/start_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class HomeScreen extends StatelessWidget {
+final heroProvider = StateProvider<String>((ref) => "");
+
+class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
-  void onStartTap(BuildContext context) {
+  void onStartTap(BuildContext context, WidgetRef ref) {
+    ref.read(heroProvider.notifier).update((state) => state = "영업사원");
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => const StartScreen(),
@@ -15,7 +19,7 @@ class HomeScreen extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       backgroundColor: Theme.of(context).canvasColor,
       body: Stack(
@@ -59,7 +63,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Gaps.v80,
                   GestureDetector(
-                    onTap: () => onStartTap(context),
+                    onTap: () => onStartTap(context, ref),
                     child: const Text(
                       ">>> Start",
                       style: TextStyle(

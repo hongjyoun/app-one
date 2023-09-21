@@ -2,9 +2,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:app_one/firebase_options.dart';
 import 'package:app_one/screens/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() async {
-  runApp(const GameOneApp());
+  runApp(const ProviderScope(child: GameOneApp()));
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 }
 
