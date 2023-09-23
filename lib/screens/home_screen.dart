@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/screens/start_screen.dart';
@@ -10,7 +12,11 @@ class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
   void onStartTap(BuildContext context, WidgetRef ref) {
-    ref.read(heroProvider.notifier).update((state) => state = "영업사원");
+    final random = Random();
+    final List<String> heroOptions = ["회계팀", "개발팀"];
+    final selectedHero = heroOptions[random.nextInt(heroOptions.length)];
+    ref.read(heroProvider.notifier).update((state) => state = selectedHero);
+
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => const StartScreen(),
