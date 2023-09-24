@@ -6,15 +6,25 @@ import 'package:app_one/screens/start_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final heroProvider = StateProvider<String>((ref) => "");
+final heroProvider = StateProvider<HeroCareer>((ref) => HeroCareer("", ""));
+
+class HeroCareer {
+  String name;
+  String code;
+  HeroCareer(this.name, this.code);
+}
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
   void onStartTap(BuildContext context, WidgetRef ref) {
     final random = Random();
-    final List<String> heroOptions = ["회계팀", "개발팀"];
-    final selectedHero = heroOptions[random.nextInt(heroOptions.length)];
+    final List<HeroCareer> heroCareers = [
+      HeroCareer("개발팀", "DEV"),
+      HeroCareer("디자인팀", "DES"),
+      HeroCareer("마케팅팀", "MKT"),
+    ];
+    final selectedHero = heroCareers[random.nextInt(heroCareers.length)];
     ref.read(heroProvider.notifier).update((state) => state = selectedHero);
 
     Navigator.of(context).push(

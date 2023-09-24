@@ -14,7 +14,7 @@ class StartScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final String hero = ref.watch(heroProvider);
+    final HeroCareer hero = ref.watch(heroProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -47,7 +47,7 @@ class StartScreen extends ConsumerWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     ContentText(
-                      text: "당신의 직책은\n$hero입니다",
+                      text: "당신의 직책은\n${hero.name}입니다",
                     ),
                     const ContentText(
                       text: "이상한 바이러스가 많아\n실험할게 많아진 요즘,\n오늘도 야근이군요 🥲",
