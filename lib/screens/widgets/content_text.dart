@@ -13,15 +13,24 @@ class ContentText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      text,
-      style: TextStyle(
-        fontFamily: 'Stardust',
-        fontSize: Sizes.size32,
-        fontWeight: FontWeight.bold,
-        color: color ?? Theme.of(context).primaryColor,
-        height: 1.7,
-      ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Flexible(
+          child: Text(
+            text,
+            softWrap: true,
+            style: TextStyle(
+              fontFamily: 'Stardust',
+              fontSize: Sizes.size32,
+              fontWeight: FontWeight.bold,
+              color: color ?? Theme.of(context).primaryColor,
+              height: 1.7,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
