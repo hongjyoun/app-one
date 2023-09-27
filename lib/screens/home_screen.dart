@@ -1,18 +1,14 @@
 import 'dart:math';
-
 import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
+import 'package:app_one/enums/career.dart';
+import 'package:app_one/models/hero_career.dart';
 import 'package:app_one/screens/start_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final heroProvider = StateProvider<HeroCareer>((ref) => HeroCareer("", ""));
-
-class HeroCareer {
-  String name;
-  String code;
-  HeroCareer(this.name, this.code);
-}
+final heroProvider =
+    StateProvider<HeroCareer>((ref) => HeroCareer("", Career.engineer));
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -20,9 +16,10 @@ class HomeScreen extends ConsumerWidget {
   void onStartTap(BuildContext context, WidgetRef ref) {
     final random = Random();
     final List<HeroCareer> heroCareers = [
-      HeroCareer("개발팀", "DEV"),
-      HeroCareer("디자인팀", "DES"),
-      HeroCareer("마케팅팀", "MKT"),
+      HeroCareer("시설관리팀", Career.engineer),
+      HeroCareer("해외영업팀", Career.abroadSales),
+      HeroCareer("연구직", Career.research),
+      HeroCareer("개발팀", Career.developer),
     ];
     final selectedHero = heroCareers[random.nextInt(heroCareers.length)];
     ref.read(heroProvider.notifier).update((state) => state = selectedHero);
