@@ -2,7 +2,8 @@ import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/enums/item.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
-import 'package:app_one/models/hero_item.dart';
+import 'package:app_one/models/hero_status.dart';
+import 'package:app_one/providers/providers.dart';
 import 'package:app_one/screens/stories/story_601.dart';
 import 'package:app_one/screens/widgets/alert_text.dart';
 import 'package:app_one/screens/widgets/content_text.dart';
@@ -12,16 +13,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-final itemProvider =
-    StateProvider<HeroItem>((ref) => HeroItem("", Item.lighter));
-
 class Story501 extends ConsumerWidget {
   const Story501({super.key});
 
   void onTapEarnItem(BuildContext context, WidgetRef ref) {
-    ref
-        .read(itemProvider.notifier)
-        .update((state) => state = HeroItem("라이터", Item.lighter));
+    ref.read(heroProvider.notifier).update((state) {
+      return HeroStatus(
+        name: state.name,
+        career: state.career,
+        ability: state.ability,
+        item: Item.lighter, // item 키만 변경
+      );
+    });
 
     navigatorOnPush(context, const Story601());
   }

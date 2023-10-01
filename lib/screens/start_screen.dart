@@ -1,4 +1,5 @@
 import 'package:app_one/constants/sizes.dart';
+import 'package:app_one/enums/ability.dart';
 import 'package:app_one/enums/career.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
 import 'package:app_one/models/hero_status.dart';
@@ -23,6 +24,19 @@ class StartScreen extends ConsumerWidget {
       return "오늘뿐 아니라\n항상 바쁘기 때문에\n";
     } else if (hero.career == Career.research) {
       return "이상한 바이러스가 많아\n실험할게 많아진 요즘,\n";
+    }
+    return "";
+  }
+
+  String textByAbility(HeroStatus hero) {
+    if (hero.ability == Ability.map) {
+      return "건물구조파악";
+    } else if (hero.ability == Ability.english) {
+      return "영어";
+    } else if (hero.ability == Ability.chemical) {
+      return "화학물 제조능력";
+    } else if (hero.ability == Ability.none) {
+      return "없음";
     }
     return "";
   }
@@ -68,8 +82,8 @@ class StartScreen extends ConsumerWidget {
                       text: "${textByCareer(hero)}오늘도 야근이군요 🥲",
                       color: Colors.white,
                     ),
-                    const ContentText(
-                      text: "능력치: 화학물 제조능력",
+                    ContentText(
+                      text: "능력치: ${textByAbility(hero)}",
                     ),
                   ],
                 ),

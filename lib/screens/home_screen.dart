@@ -15,10 +15,30 @@ class HomeScreen extends ConsumerWidget {
   void onStartTap(BuildContext context, WidgetRef ref) {
     final random = Random();
     final List<HeroStatus> heroCareers = [
-      HeroStatus("시설관리팀", Career.engineer, Ability.map, null),
-      HeroStatus("해외영업팀", Career.abroadSales, Ability.english, null),
-      HeroStatus("연구직", Career.research, Ability.chemical, null),
-      HeroStatus("개발팀", Career.developer, Ability.none, null),
+      HeroStatus(
+        name: "시설관리팀",
+        career: Career.engineer,
+        ability: Ability.map,
+        item: null,
+      ),
+      HeroStatus(
+        name: "해외영업팀",
+        career: Career.abroadSales,
+        ability: Ability.english,
+        item: null,
+      ),
+      HeroStatus(
+        name: "연구직",
+        career: Career.research,
+        ability: Ability.chemical,
+        item: null,
+      ),
+      HeroStatus(
+        name: "개발팀",
+        career: Career.developer,
+        ability: Ability.none,
+        item: null,
+      ),
     ];
     final selectedHero = heroCareers[random.nextInt(heroCareers.length)];
     ref.read(heroProvider.notifier).update((state) => state = selectedHero);

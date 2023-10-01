@@ -2,7 +2,7 @@ import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/enums/item.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
-import 'package:app_one/models/hero_item.dart';
+import 'package:app_one/models/hero_status.dart';
 import 'package:app_one/providers/providers.dart';
 import 'package:app_one/screens/stories/story_601.dart';
 import 'package:app_one/screens/widgets/alert_text.dart';
@@ -17,9 +17,14 @@ class Story502 extends ConsumerWidget {
   const Story502({super.key});
 
   void onTapEarnItem(BuildContext context, WidgetRef ref) {
-    ref
-        .read(itemProvider.notifier)
-        .update((state) => state = HeroItem("라이터", Item.rubberBoots));
+    ref.read(heroProvider.notifier).update((state) {
+      return HeroStatus(
+        name: state.name,
+        career: state.career,
+        ability: state.ability,
+        item: Item.rubberBoots, // item 키만 변경
+      );
+    });
 
     navigatorOnPush(context, const Story601());
   }
