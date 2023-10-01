@@ -1,0 +1,4 @@
+enum Item {
+  lighter,
+  rubberBoots,
+}

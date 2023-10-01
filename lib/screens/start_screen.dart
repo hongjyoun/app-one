@@ -1,8 +1,8 @@
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/enums/career.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
-import 'package:app_one/models/hero_career.dart';
-import 'package:app_one/screens/home_screen.dart';
+import 'package:app_one/models/hero_status.dart';
+import 'package:app_one/providers/providers.dart';
 import 'package:app_one/screens/stories/story_100.dart';
 import 'package:app_one/screens/widgets/content_text.dart';
 import 'package:app_one/screens/widgets/round_icon_button.dart';
@@ -14,7 +14,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class StartScreen extends ConsumerWidget {
   const StartScreen({super.key});
 
-  String textByCareer(HeroCareer hero) {
+  String textByCareer(HeroStatus hero) {
     if (hero.career == Career.engineer) {
       return "오늘따라 유난히\n건물에서 소리가\n많이 나는 바람에\n";
     } else if (hero.career == Career.abroadSales) {
@@ -29,7 +29,7 @@ class StartScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final HeroCareer hero = ref.watch(heroProvider);
+    final HeroStatus hero = ref.watch(heroProvider);
 
     return Scaffold(
       appBar: AppBar(
