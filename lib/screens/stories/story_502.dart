@@ -1,6 +1,7 @@
 import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
+import 'package:app_one/screens/stories/story_601.dart';
 import 'package:app_one/screens/widgets/alert_text.dart';
 import 'package:app_one/screens/widgets/content_text.dart';
 import 'package:app_one/screens/widgets/round_icon_button.dart';
@@ -64,7 +65,7 @@ class Story502 extends StatelessWidget {
                   children: [
                     SelectTextButton(
                       text: "소리가 나는 구두대신 고무장화로 갈아신는다",
-                      onTap: () => navigatorOnPush(context, const Story502()),
+                      onTap: () => navigatorOnPush(context, const Story601()),
                     ),
                   ],
                 ),

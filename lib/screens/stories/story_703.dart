@@ -1,16 +1,14 @@
-import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
-import 'package:app_one/screens/stories/story_601.dart';
-import 'package:app_one/screens/widgets/alert_text.dart';
+import 'package:app_one/screens/stories/story_701.dart';
 import 'package:app_one/screens/widgets/content_text.dart';
 import 'package:app_one/screens/widgets/round_icon_button.dart';
 import 'package:app_one/screens/widgets/select_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class Story501 extends StatelessWidget {
-  const Story501({super.key});
+class Story703 extends StatelessWidget {
+  const Story703({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -44,16 +42,7 @@ class Story501 extends StatelessWidget {
                 child: Column(
                   children: [
                     ContentText(
-                      text: "탕비실로 간신히 숨었다.\n핸드폰으로 뉴스를 급히 확인해본다.",
-                      color: Theme.of(context).primaryColor,
-                    ),
-                    Gaps.v20,
-                    const AlertText(
-                      text: "[좀비의 특성을 확인했습니다]",
-                    ),
-                    Gaps.v20,
-                    ContentText(
-                      text: "좀비가 불에 약하다고?",
+                      text: "다행히 아무 일 없이 14층까지 올라왔다.",
                       color: Theme.of(context).primaryColor,
                     ),
                   ],
@@ -64,8 +53,8 @@ class Story501 extends StatelessWidget {
                 child: Column(
                   children: [
                     SelectTextButton(
-                      text: "탕비실에 있던 라이터를 챙긴다",
-                      onTap: () => navigatorOnPush(context, const Story601()),
+                      text: "계속 올라가자",
+                      onTap: () => navigatorOnPush(context, const Story701()),
                     ),
                   ],
                 ),
