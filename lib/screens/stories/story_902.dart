@@ -1,3 +1,4 @@
+import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/enums/ability.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
@@ -76,6 +77,7 @@ class Story902 extends ConsumerWidget {
                       text: "저기요, 괜찮으세요?",
                       onTap: () => onTapButtonByCareer(context, hero),
                     ),
+                    Gaps.v20,
                     SelectTextButton(
                       text: "무시하고 올라간다",
                       onTap: () => navigatorOnPush(context, const Story992()),

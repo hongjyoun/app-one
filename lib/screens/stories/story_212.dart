@@ -1,7 +1,6 @@
 import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
-import 'package:app_one/screens/widgets/alert_text.dart';
 import 'package:app_one/screens/widgets/content_text.dart';
 import 'package:app_one/screens/widgets/round_icon_button.dart';
 import 'package:app_one/screens/widgets/select_text_button.dart';
@@ -58,14 +57,17 @@ class Story212 extends ConsumerWidget {
                       text: "헤어 스프레이",
                       onTap: () => navigatorOnPush(context, const Story212()),
                     ),
+                    Gaps.v20,
                     SelectTextButton(
                       text: "긴 막대기",
                       onTap: () => navigatorOnPush(context, const Story212()),
                     ),
+                    Gaps.v20,
                     SelectTextButton(
                       text: "염산",
                       onTap: () => navigatorOnPush(context, const Story212()),
                     ),
+                    Gaps.v20,
                     SelectTextButton(
                       text: "진통제",
                       onTap: () => navigatorOnPush(context, const Story212()),

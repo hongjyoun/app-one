@@ -1,5 +1,8 @@
+import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
+import 'package:app_one/screens/stories/story_210.dart';
+import 'package:app_one/screens/stories/story_902.dart';
 import 'package:app_one/screens/widgets/content_text.dart';
 import 'package:app_one/screens/widgets/round_icon_button.dart';
 import 'package:app_one/screens/widgets/select_text_button.dart';
@@ -53,11 +56,12 @@ class Story901 extends StatelessWidget {
                   children: [
                     SelectTextButton(
                       text: "어짜피 이렇게 된거, 혹시 모르니 비상약품을 챙겨가자",
-                      onTap: () => navigatorOnPush(context, const Story901()),
+                      onTap: () => navigatorOnPush(context, const Story210()),
                     ),
+                    Gaps.v20,
                     SelectTextButton(
                       text: "비상구계단으로 옥상으로 바로가자",
-                      onTap: () => navigatorOnPush(context, const Story901()),
+                      onTap: () => navigatorOnPush(context, const Story902()),
                     ),
                   ],
                 ),
