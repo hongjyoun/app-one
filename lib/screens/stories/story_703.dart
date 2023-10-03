@@ -1,6 +1,6 @@
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
-import 'package:app_one/screens/stories/story_701.dart';
+import 'package:app_one/screens/stories/story_902.dart';
 import 'package:app_one/screens/widgets/content_text.dart';
 import 'package:app_one/screens/widgets/round_icon_button.dart';
 import 'package:app_one/screens/widgets/select_text_button.dart';
@@ -54,7 +54,7 @@ class Story703 extends StatelessWidget {
                   children: [
                     SelectTextButton(
                       text: "계속 올라가자",
-                      onTap: () => navigatorOnPush(context, const Story701()),
+                      onTap: () => navigatorOnPush(context, const Story902()),
                     ),
                   ],
                 ),
