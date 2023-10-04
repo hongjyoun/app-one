@@ -1,7 +1,6 @@
 import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/enums/ability.dart';
-import 'package:app_one/enums/item.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
 import 'package:app_one/models/hero_status.dart';
 import 'package:app_one/providers/providers.dart';
