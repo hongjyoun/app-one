@@ -58,20 +58,24 @@ class Story502 extends ConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: Column(
+                child: ListView(
                   children: [
-                    ContentText(
-                      text: "화장실로 간신히 숨었다.\n핸드폰으로 뉴스를 급히 확인해본다.",
-                      color: Theme.of(context).primaryColor,
-                    ),
-                    Gaps.v20,
-                    const AlertText(
-                      text: "[좀비의 특성을 확인했습니다]",
-                    ),
-                    Gaps.v20,
-                    ContentText(
-                      text: "좀비가 소리에 예민하다고?",
-                      color: Theme.of(context).primaryColor,
+                    Column(
+                      children: [
+                        ContentText(
+                          text: "화장실로 간신히 숨었다.\n핸드폰으로 뉴스를 급히 확인해본다.",
+                          color: Theme.of(context).primaryColor,
+                        ),
+                        Gaps.v20,
+                        const AlertText(
+                          text: "[좀비의 특성을 확인했습니다]",
+                        ),
+                        Gaps.v20,
+                        ContentText(
+                          text: "좀비가 소리에 예민하다고?",
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ],
                     ),
                   ],
                 ),

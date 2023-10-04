@@ -41,9 +41,13 @@ class Story202 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: ContentText(
-                  text: "엘레베이터 버튼을\n누르고 기다린다.\n엘레베이터 기다리는 동안\n뭘 할까?",
-                  color: Theme.of(context).primaryColor,
+                child: ListView(
+                  children: [
+                    ContentText(
+                      text: "엘레베이터 버튼을\n누르고 기다린다.\n엘레베이터 기다리는 동안\n뭘 할까?",
+                      color: Theme.of(context).primaryColor,
+                    ),
+                  ],
                 ),
               ),
               Padding(

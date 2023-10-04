@@ -39,9 +39,13 @@ class Story802 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: ContentText(
-                  text: "복도에 놓여있던 철장 캐비넷의\n자물쇠를 염산으로 녹이고\n몸을 피했다.",
-                  color: Theme.of(context).primaryColor,
+                child: ListView(
+                  children: [
+                    ContentText(
+                      text: "복도에 놓여있던 철장 캐비넷의\n자물쇠를 염산으로 녹이고\n몸을 피했다.",
+                      color: Theme.of(context).primaryColor,
+                    ),
+                  ],
                 ),
               ),
               Padding(

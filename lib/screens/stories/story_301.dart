@@ -39,10 +39,14 @@ class Story301 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: ContentText(
-                  text:
-                      "어짜피 늦은거,\n휴게실에 있는 간이침대에서 자야겠다.\n그런데 사무실 문 옆에 소리를 내는 무언가가 있다...",
-                  color: Theme.of(context).primaryColor,
+                child: ListView(
+                  children: [
+                    ContentText(
+                      text:
+                          "어짜피 늦은거,\n휴게실에 있는 간이침대에서 자야겠다.\n그런데 사무실 문 옆에 소리를 내는 무언가가 있다...",
+                      color: Theme.of(context).primaryColor,
+                    ),
+                  ],
                 ),
               ),
               Padding(

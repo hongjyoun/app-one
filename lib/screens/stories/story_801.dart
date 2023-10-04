@@ -39,11 +39,15 @@ class Story801 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: Column(
+                child: ListView(
                   children: [
-                    ContentText(
-                      text: "바로 옆에 있는 문으로 나가면\n엘레베이터를 타고\n이동할 수 있을거야!",
-                      color: Theme.of(context).primaryColor,
+                    Column(
+                      children: [
+                        ContentText(
+                          text: "바로 옆에 있는 문으로 나가면\n엘레베이터를 타고\n이동할 수 있을거야!",
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ],
                     ),
                   ],
                 ),

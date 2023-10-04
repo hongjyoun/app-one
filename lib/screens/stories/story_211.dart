@@ -42,16 +42,20 @@ class Story211 extends ConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: Column(
+                child: ListView(
                   children: [
-                    ContentText(
-                      text:
-                          "“좀비 첫 출몰지:\n옥상으로 추정\n옥상 문을 절대 열지 말 것”\n누군가 경고를 남긴 것 같다",
-                      color: Theme.of(context).primaryColor,
-                    ),
-                    Gaps.v20,
-                    const AlertText(
-                      text: "[ 목표가 갱신되었습니다 :\n지하 주차장으로 이동 ]",
+                    Column(
+                      children: [
+                        ContentText(
+                          text:
+                              "“좀비 첫 출몰지:\n옥상으로 추정\n옥상 문을 절대 열지 말 것”\n누군가 경고를 남긴 것 같다",
+                          color: Theme.of(context).primaryColor,
+                        ),
+                        Gaps.v20,
+                        const AlertText(
+                          text: "[ 목표가 갱신되었습니다 :\n지하 주차장으로 이동 ]",
+                        ),
+                      ],
                     ),
                   ],
                 ),

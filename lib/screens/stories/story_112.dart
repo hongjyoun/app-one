@@ -40,12 +40,16 @@ class Story112 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: Column(
+                child: ListView(
                   children: [
-                    ContentText(
-                      text:
-                          "'!#!@#!!.....'\n외국인이\n넋이 나간채\n중얼거리고 있었다\n영어인것 같은데 알아들을 수가 없다...",
-                      color: Theme.of(context).primaryColor,
+                    Column(
+                      children: [
+                        ContentText(
+                          text:
+                              "'!#!@#!!.....'\n외국인이\n넋이 나간채\n중얼거리고 있었다\n영어인것 같은데 알아들을 수가 없다...",
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ],
                     ),
                   ],
                 ),

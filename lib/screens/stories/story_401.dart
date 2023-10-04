@@ -42,15 +42,19 @@ class Story401 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: Column(
+                child: ListView(
                   children: [
-                    const AlertText(
-                      text: "[좀비를 발견했습니다]",
-                    ),
-                    Gaps.v20,
-                    ContentText(
-                      text: "이상한 것과 눈이 마주쳤다\n🧟‍♀️",
-                      color: Theme.of(context).primaryColor,
+                    Column(
+                      children: [
+                        const AlertText(
+                          text: "[좀비를 발견했습니다]",
+                        ),
+                        Gaps.v20,
+                        ContentText(
+                          text: "이상한 것과 눈이 마주쳤다\n🧟‍♀️",
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ],
                     ),
                   ],
                 ),

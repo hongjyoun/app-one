@@ -1,3 +1,4 @@
+import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
 import 'package:app_one/screens/stories/story_210.dart';
@@ -40,12 +41,16 @@ class Story111 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: Column(
+                child: ListView(
                   children: [
-                    ContentText(
-                      text:
-                          "“이 위로는 올라갈 수 없어.\n올라가면 바로 죽음뿐이야”\n오전에 왔었던 해외바이어 중 한명이\n넋이 나간채 중얼거리고 있었다.",
-                      color: Theme.of(context).primaryColor,
+                    Column(
+                      children: [
+                        ContentText(
+                          text:
+                              "“이 위로는 올라갈 수 없어.\n올라가면 바로 죽음뿐이야”\n오전에 왔었던\n해외바이어 중 한명이\n넋이 나간채 중얼거리고 있었다.",
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ],
                     ),
                   ],
                 ),
@@ -58,6 +63,7 @@ class Story111 extends StatelessWidget {
                       text: "더 올라가면 안될것 같아. 14층안으로 들어가자.",
                       onTap: () => navigatorOnPush(context, const Story210()),
                     ),
+                    Gaps.v20,
                     SelectTextButton(
                       text: "무시하고 그냥 올라간다",
                       onTap: () => navigatorOnPush(context, const Story992()),

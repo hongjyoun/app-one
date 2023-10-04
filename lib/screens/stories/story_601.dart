@@ -49,19 +49,23 @@ class Story601 extends ConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: Column(
+                child: ListView(
                   children: [
-                    const AlertText(
-                      text: "[아이템을 획득했습니다]",
-                    ),
-                    Gaps.v20,
-                    ContentText(
-                      text: "일단 옥상으로 가서\n헬기 구조를 기다리자",
-                      color: Theme.of(context).primaryColor,
-                    ),
-                    Gaps.v20,
-                    const AlertText(
-                      text: "목표: 옥상이 있는 17층까지 이동",
+                    Column(
+                      children: [
+                        const AlertText(
+                          text: "[아이템을 획득했습니다]",
+                        ),
+                        Gaps.v20,
+                        ContentText(
+                          text: "일단 옥상으로 가서\n헬기 구조를 기다리자",
+                          color: Theme.of(context).primaryColor,
+                        ),
+                        Gaps.v20,
+                        const AlertText(
+                          text: "목표: 옥상이 있는 17층까지 이동",
+                        ),
+                      ],
                     ),
                   ],
                 ),

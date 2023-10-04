@@ -40,11 +40,15 @@ class Story212 extends ConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: Column(
+                child: ListView(
                   children: [
-                    ContentText(
-                      text: "여러 물건과 약품들이 보인다.\n어떤걸 가져갈까?",
-                      color: Theme.of(context).primaryColor,
+                    Column(
+                      children: [
+                        ContentText(
+                          text: "여러 물건과 약품들이 보인다.\n어떤걸 가져갈까?",
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ],
                     ),
                   ],
                 ),

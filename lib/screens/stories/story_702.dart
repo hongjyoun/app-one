@@ -57,11 +57,15 @@ class Story702 extends ConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: Column(
+                child: ListView(
                   children: [
-                    ContentText(
-                      text: "'또각 또각..'\n내 구두 소리에\n위층에 있던 좀비들이\n내려오고 있다.",
-                      color: Theme.of(context).primaryColor,
+                    Column(
+                      children: [
+                        ContentText(
+                          text: "'또각 또각..'\n내 구두 소리에\n위층에 있던 좀비들이\n내려오고 있다.",
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ],
                     ),
                   ],
                 ),

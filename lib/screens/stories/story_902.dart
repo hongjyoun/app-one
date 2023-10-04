@@ -59,12 +59,16 @@ class Story902 extends ConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: Column(
+                child: ListView(
                   children: [
-                    ContentText(
-                      text:
-                          "근데..어라, 사람인가?\n누군가가 고개를 떨군채\n14층 비상구 문앞 계단에\n걸터 앉아있다",
-                      color: Theme.of(context).primaryColor,
+                    Column(
+                      children: [
+                        ContentText(
+                          text:
+                              "근데..어라, 사람인가?\n누군가가 고개를 떨군채\n14층 비상구 문앞 계단에\n걸터 앉아있다",
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ],
                     ),
                   ],
                 ),

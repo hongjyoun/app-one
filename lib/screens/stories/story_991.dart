@@ -39,10 +39,14 @@ class Story991 extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Expanded(
-                child: ContentText(
-                  text: "더 이상 갈 곳이 없어\n허둥대다가..\n소리에 이끌린\n좀비에 물려\n사망하였습니다",
-                  color: Colors.white70,
+              Expanded(
+                child: ListView(
+                  children: const [
+                    ContentText(
+                      text: "더 이상 갈 곳이 없어\n허둥대다가..\n소리에 이끌린\n좀비에 물려\n사망하였습니다",
+                      color: Colors.white70,
+                    ),
+                  ],
                 ),
               ),
               Padding(
