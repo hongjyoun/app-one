@@ -7,13 +7,13 @@ import 'package:app_one/screens/widgets/select_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class Story1001 extends StatelessWidget {
-  const Story1001({super.key});
+class Story1995 extends StatelessWidget {
+  const Story1995({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF00828A),
+      backgroundColor: const Color(0xFF8B0535),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -43,7 +43,7 @@ class Story1001 extends StatelessWidget {
                 child: ListView(
                   children: const [
                     ContentText(
-                      text: "백신을 투여했더니,\n좀비들이 달려들지 않는다..\n유유히 건물 밖으로\n걸어나간다.",
+                      text: "지하 주차장에는 이미 좀비들이 가득했다. 라이터로 공격해보지만 역부족이다..",
                       color: Colors.white70,
                     ),
                   ],
@@ -54,7 +54,7 @@ class Story1001 extends StatelessWidget {
                 child: Column(
                   children: [
                     SelectTextButton(
-                      text: "THE END - 탈출 성공! 🎃",
+                      text: "THE END - 탈출 실패..🧟",
                       onTap: () => navigatorOnPush(context, const HomeScreen()),
                     ),
                   ],

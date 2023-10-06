@@ -55,7 +55,7 @@ class Story1002 extends StatelessWidget {
                 child: Column(
                   children: [
                     SelectTextButton(
-                      text: "THE END",
+                      text: "THE END - 탈출 성공! 🎃",
                       onTap: () => navigatorOnPush(context, const HomeScreen()),
                     ),
                   ],

@@ -7,13 +7,11 @@ class HeroStatus {
   Career? career;
   Ability? ability;
   Item? item;
-  Item? itemLast;
 
   HeroStatus({
     this.name,
     this.career,
     this.ability,
     this.item,
-    this.itemLast,
   });
 }

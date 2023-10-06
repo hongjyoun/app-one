@@ -7,8 +7,8 @@ import 'package:app_one/screens/widgets/select_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class Story1001 extends StatelessWidget {
-  const Story1001({super.key});
+class Story1003 extends StatelessWidget {
+  const Story1003({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +43,8 @@ class Story1001 extends StatelessWidget {
                 child: ListView(
                   children: const [
                     ContentText(
-                      text: "백신을 투여했더니,\n좀비들이 달려들지 않는다..\n유유히 건물 밖으로\n걸어나간다.",
+                      text:
+                          "헤어 스프레이에 라이터를 붙여 천장에 있는 소화등에 불을 갖다댔다. 소화벨이 울리기 시작했다. 벨이 울리는 곳으로 모든 좀비들이 몰려든다. 다행히 그 틈을 타 건물을 빠져나갈 수 있었다.",
                       color: Colors.white70,
                     ),
                   ],
