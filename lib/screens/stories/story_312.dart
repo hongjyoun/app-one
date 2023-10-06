@@ -57,10 +57,6 @@ class Story312 extends StatelessWidget {
                       onTap: () => navigatorOnPush(context, const Story312()),
                     ),
                     Gaps.v20,
-                    SelectTextButton(
-                      text: "그냥 지하실로 향한다.",
-                      onTap: () => navigatorOnPush(context, const Story312()),
-                    ),
                   ],
                 ),
               ),

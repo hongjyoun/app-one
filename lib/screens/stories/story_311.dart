@@ -59,11 +59,6 @@ class Story311 extends StatelessWidget {
                       text: "더 자세히 살펴본다",
                       onTap: () => navigatorOnPush(context, const Story1001()),
                     ),
-                    Gaps.v20,
-                    SelectTextButton(
-                      text: "무시한다",
-                      onTap: () => navigatorOnPush(context, const Story1002()),
-                    ),
                   ],
                 ),
               ),
