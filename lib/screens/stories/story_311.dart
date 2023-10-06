@@ -1,8 +1,6 @@
-import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
 import 'package:app_one/screens/stories/story_1001.dart';
-import 'package:app_one/screens/stories/story_1002.dart';
 import 'package:app_one/screens/widgets/content_text.dart';
 import 'package:app_one/screens/widgets/round_icon_button.dart';
 import 'package:app_one/screens/widgets/select_text_button.dart';
@@ -16,10 +14,7 @@ class Story311 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        toolbarHeight: 100,
-        // automaticallyImplyLeading: false,
+        automaticallyImplyLeading: false,
         actions: const [
           Padding(
             padding: EdgeInsets.all(Sizes.size20),

@@ -15,10 +15,7 @@ class Story1992 extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFF8B0535),
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        toolbarHeight: 100,
-        // automaticallyImplyLeading: false,
+        automaticallyImplyLeading: false,
         actions: const [
           Padding(
             padding: EdgeInsets.all(Sizes.size20),

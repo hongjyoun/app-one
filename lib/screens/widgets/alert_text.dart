@@ -11,16 +11,20 @@ class AlertText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      textAlign: TextAlign.center,
-      text,
-      style: const TextStyle(
-        fontFamily: 'Stardust',
-        fontSize: Sizes.size20,
-        fontWeight: FontWeight.bold,
-        color: Colors.white,
-        height: 1.7,
-      ),
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          text,
+          style: const TextStyle(
+            fontFamily: 'Stardust',
+            fontSize: Sizes.size20,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+            height: 1.7,
+          ),
+        ),
+      ],
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:app_one/constants/gaps.dart';
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
 import 'package:app_one/screens/stories/story_210.dart';
@@ -15,10 +16,7 @@ class Story112 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        toolbarHeight: 100,
-        // automaticallyImplyLeading: false,
+        automaticallyImplyLeading: false,
         actions: const [
           Padding(
             padding: EdgeInsets.all(Sizes.size20),
@@ -62,6 +60,7 @@ class Story112 extends StatelessWidget {
                       text: "내 연구실에서 화학약품을 좀 챙겨가자",
                       onTap: () => navigatorOnPush(context, const Story210()),
                     ),
+                    Gaps.v20,
                     SelectTextButton(
                       text: "그냥 지나치고 올라간다",
                       onTap: () => navigatorOnPush(context, const Story992()),

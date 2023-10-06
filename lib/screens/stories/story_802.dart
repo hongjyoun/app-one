@@ -14,10 +14,7 @@ class Story802 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        toolbarHeight: 100,
-        // automaticallyImplyLeading: false,
+        automaticallyImplyLeading: false,
         actions: const [
           Padding(
             padding: EdgeInsets.all(Sizes.size20),
@@ -42,7 +39,7 @@ class Story802 extends StatelessWidget {
                 child: ListView(
                   children: [
                     ContentText(
-                      text: "복도에 놓여있던 철장 캐비넷의\n자물쇠를 염산으로 녹이고\n몸을 피했다.",
+                      text: "복도에 놓여있던 철장 캐비넷의 자물쇠를 염산으로 녹이고 몸을 피했다.",
                       color: Theme.of(context).primaryColor,
                     ),
                   ],

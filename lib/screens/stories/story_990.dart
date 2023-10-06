@@ -1,6 +1,6 @@
 import 'package:app_one/constants/sizes.dart';
 import 'package:app_one/functions/navigator_on_push.dart';
-import 'package:app_one/screens/start_screen.dart';
+import 'package:app_one/screens/home_screen.dart';
 import 'package:app_one/screens/widgets/content_text.dart';
 import 'package:app_one/screens/widgets/round_icon_button.dart';
 import 'package:app_one/screens/widgets/select_text_button.dart';
@@ -15,10 +15,7 @@ class Story990 extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFF8B0535),
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        toolbarHeight: 100,
-        // automaticallyImplyLeading: false,
+        automaticallyImplyLeading: false,
         actions: const [
           Padding(
             padding: EdgeInsets.all(Sizes.size20),
@@ -54,9 +51,8 @@ class Story990 extends StatelessWidget {
                 child: Column(
                   children: [
                     SelectTextButton(
-                      text: "다시 시작하기",
-                      onTap: () =>
-                          navigatorOnPush(context, const StartScreen()),
+                      text: "사망하였습니다 💀",
+                      onTap: () => navigatorOnPush(context, const HomeScreen()),
                     ),
                   ],
                 ),
