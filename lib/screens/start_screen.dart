@@ -17,13 +17,13 @@ class StartScreen extends ConsumerWidget {
 
   String textByCareer(HeroStatus hero) {
     if (hero.career == Career.engineer) {
-      return "오늘따라 유난히\n건물에서 소리가\n많이 나는 바람에\n";
+      return "오늘따라 유난히 건물에서 소리가 많이 나는 바람에\n";
     } else if (hero.career == Career.abroadSales) {
-      return "오늘 해외바이어를\n만나는 바람에\n";
+      return "오늘 해외바이어를 만나는 바람에\n";
     } else if (hero.career == Career.developer) {
-      return "오늘뿐 아니라\n항상 바쁘기 때문에\n";
+      return "오늘뿐 아니라 항상 바쁘기 때문에\n";
     } else if (hero.career == Career.research) {
-      return "이상한 바이러스가 많아\n실험할게 많아진 요즘,\n";
+      return "이상한 바이러스가 많아 실험할게 많아진 요즘,\n";
     }
     return "";
   }

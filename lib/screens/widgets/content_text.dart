@@ -23,7 +23,7 @@ class ContentText extends StatelessWidget {
             softWrap: true,
             style: TextStyle(
               fontFamily: 'Stardust',
-              fontSize: Sizes.size32,
+              fontSize: Sizes.size28,
               fontWeight: FontWeight.bold,
               color: color ?? Theme.of(context).primaryColor,
               height: 1.7,
