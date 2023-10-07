@@ -40,7 +40,7 @@ class Story312 extends StatelessWidget {
                 child: ListView(
                   children: [
                     ContentText(
-                      text: "용접으로 막아놨던\n1층의 비상통로가\n기억났다.\n염산으로 녹일 수 있지 않을까?",
+                      text: "용접으로 막아놨던 1층의 비상통로가 기억났다. 염산으로 녹일 수 있지 않을까?",
                       color: Theme.of(context).primaryColor,
                     ),
                   ],

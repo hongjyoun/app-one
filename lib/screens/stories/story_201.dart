@@ -39,7 +39,7 @@ class Story201 extends StatelessWidget {
                 child: ListView(
                   children: [
                     ContentText(
-                      text: "밤 12시,\n일이 끝났다\n회사에서 자고 가야될것 같다",
+                      text: "밤 12시,\n일이 끝났다. 회사에서 자고 가야될것 같다",
                       color: Theme.of(context).primaryColor,
                     ),
                   ],

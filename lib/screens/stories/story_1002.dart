@@ -40,8 +40,7 @@ class Story1002 extends StatelessWidget {
                 child: ListView(
                   children: const [
                     ContentText(
-                      text:
-                          "아직 좀비들이 없는\n비밀 통로를 발견했다.\n유유히 건물 밖으로\n이어지는 통로로 탈출한다.",
+                      text: "아직 좀비들이 없는 비밀 통로를 발견했다. 유유히 건물 밖으로 이어지는 통로로 탈출한다.",
                       color: Colors.white70,
                     ),
                   ],

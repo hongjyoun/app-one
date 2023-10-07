@@ -41,7 +41,7 @@ class Story202 extends StatelessWidget {
                 child: ListView(
                   children: [
                     ContentText(
-                      text: "엘레베이터 버튼을\n누르고 기다린다.\n엘레베이터 기다리는 동안\n뭘 할까?",
+                      text: "엘레베이터 버튼을 누르고 기다린다. 엘레베이터 기다리는 동안 뭘 할까?",
                       color: Theme.of(context).primaryColor,
                     ),
                   ],

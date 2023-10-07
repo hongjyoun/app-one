@@ -60,7 +60,7 @@ class Story502 extends ConsumerWidget {
                     Column(
                       children: [
                         ContentText(
-                          text: "화장실로 간신히 숨었다.\n핸드폰으로 뉴스를 급히 확인해본다.",
+                          text: "화장실로 간신히 숨었다. 핸드폰으로 뉴스를 급히 확인해본다.",
                           color: Theme.of(context).primaryColor,
                         ),
                         Gaps.v20,

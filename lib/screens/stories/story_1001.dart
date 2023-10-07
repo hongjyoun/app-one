@@ -40,7 +40,7 @@ class Story1001 extends StatelessWidget {
                 child: ListView(
                   children: const [
                     ContentText(
-                      text: "백신을 투여했더니,\n좀비들이 달려들지 않는다..\n유유히 건물 밖으로\n걸어나간다.",
+                      text: "백신을 투여했더니,\n좀비들이 달려들지 않는다..유유히 건물 밖으로 걸어나간다.",
                       color: Colors.white70,
                     ),
                   ],

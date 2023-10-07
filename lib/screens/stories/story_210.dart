@@ -40,7 +40,7 @@ class Story210 extends StatelessWidget {
                   children: [
                     ContentText(
                       text:
-                          "다양한 약품이 있는 연구실로 들어왔다.\n연구실 한쪽 벽면의 화이트보드에는 큰 글씨가 적혀있다",
+                          "다양한 약품이 있는 연구실로 들어왔다. 연구실 한쪽 벽면의 화이트보드에는 큰 글씨가 적혀있다",
                       color: Theme.of(context).primaryColor,
                     ),
                   ],

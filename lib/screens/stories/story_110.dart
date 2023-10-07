@@ -42,7 +42,7 @@ class Story110 extends StatelessWidget {
                       children: [
                         ContentText(
                           text:
-                              "'!#!@#!!.....'\n외국인이\n넋이 나간채\n중얼거리고 있었다\n영어인것 같은데 알아들을 수가 없다...",
+                              "'!#!@#!!.....'\n외국인이 넋이 나간채 중얼거리고 있었다. 영어인것 같은데 알아들을 수가 없다...",
                           color: Theme.of(context).primaryColor,
                         ),
                       ],

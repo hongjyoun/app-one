@@ -62,7 +62,7 @@ class Story902 extends ConsumerWidget {
                       children: [
                         ContentText(
                           text:
-                              "근데..어라, 사람인가?\n누군가가 고개를 떨군채\n14층 비상구 문앞 계단에\n걸터 앉아있다",
+                              "근데..어라, 사람인가?\n누군가가 고개를 떨군채 14층 비상구 문앞 계단에 걸터 앉아있다",
                           color: Theme.of(context).primaryColor,
                         ),
                       ],

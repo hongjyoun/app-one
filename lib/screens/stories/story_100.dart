@@ -41,7 +41,7 @@ class Story100 extends StatelessWidget {
                 child: ListView(
                   children: [
                     ContentText(
-                      text: "벌써 밤 11시...\n막차가 끊기기 전에\n집으로 갈까?",
+                      text: "벌써 밤 11시...\n막차가 끊기기 전에 집으로 갈까?",
                       color: Theme.of(context).primaryColor,
                     ),
                   ],

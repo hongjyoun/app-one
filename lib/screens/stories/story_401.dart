@@ -48,7 +48,7 @@ class Story401 extends StatelessWidget {
                         ),
                         Gaps.v20,
                         ContentText(
-                          text: "이상한 것과 눈이 마주쳤다\n🧟‍♀️",
+                          text: "이상한 것과 눈이 마주쳤다🧟‍♀️",
                           color: Theme.of(context).primaryColor,
                         ),
                       ],

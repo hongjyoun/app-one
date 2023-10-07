@@ -40,7 +40,7 @@ class Story990 extends StatelessWidget {
                 child: ListView(
                   children: const [
                     ContentText(
-                      text: "퇴근길,\n알 수 없는 존재에 물려\n사망하였습니다",
+                      text: "퇴근길,\n알 수 없는 존재에 물려 사망하였습니다",
                       color: Colors.white70,
                     ),
                   ],
@@ -51,7 +51,7 @@ class Story990 extends StatelessWidget {
                 child: Column(
                   children: [
                     SelectTextButton(
-                      text: "사망하였습니다 💀",
+                      text: "다시 시작하기 💀",
                       onTap: () => navigatorOnPush(context, const HomeScreen()),
                     ),
                   ],

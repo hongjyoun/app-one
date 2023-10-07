@@ -103,7 +103,7 @@ class Story212 extends ConsumerWidget {
                     Column(
                       children: [
                         ContentText(
-                          text: "여러 물건과 약품들이 보인다.\n어떤걸 가져갈까?",
+                          text: "여러 물건과 약품들이 보인다. 어떤걸 가져갈까?",
                           color: Theme.of(context).primaryColor,
                         ),
                       ],

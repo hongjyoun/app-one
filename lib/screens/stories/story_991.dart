@@ -40,7 +40,7 @@ class Story991 extends StatelessWidget {
                 child: ListView(
                   children: const [
                     ContentText(
-                      text: "더 이상 갈 곳이 없어\n허둥대다가..\n소리에 이끌린\n좀비에 물려\n사망하였습니다",
+                      text: "더 이상 갈 곳이 없어 허둥대다가..\n소리에 이끌린 좀비에 물려 사망하였습니다",
                       color: Colors.white70,
                     ),
                   ],
@@ -51,7 +51,7 @@ class Story991 extends StatelessWidget {
                 child: Column(
                   children: [
                     SelectTextButton(
-                      text: "사망하였습니다 💀",
+                      text: "다시 시작하기 💀",
                       onTap: () => navigatorOnPush(context, const HomeScreen()),
                     ),
                   ],

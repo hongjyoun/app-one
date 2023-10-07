@@ -39,7 +39,7 @@ class Story303 extends StatelessWidget {
                 child: ListView(
                   children: [
                     ContentText(
-                      text: "1층 로비에 내려왔다.\n경비아저씨도 보이지 않는다.",
+                      text: "1층 로비에 내려왔다. 경비아저씨도 보이지 않는다.",
                       color: Theme.of(context).primaryColor,
                     ),
                   ],

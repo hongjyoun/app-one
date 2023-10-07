@@ -55,7 +55,7 @@ class Story601 extends ConsumerWidget {
                         ),
                         Gaps.v20,
                         ContentText(
-                          text: "일단 옥상으로 가서\n헬기 구조를 기다리자",
+                          text: "일단 옥상으로 가서 헬기 구조를 기다리자",
                           color: Theme.of(context).primaryColor,
                         ),
                         Gaps.v20,

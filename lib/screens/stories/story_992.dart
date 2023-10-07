@@ -52,7 +52,7 @@ class Story992 extends StatelessWidget {
                 child: Column(
                   children: [
                     SelectTextButton(
-                      text: "사망하였습니다 💀",
+                      text: "다시 시작하기 💀",
                       onTap: () => navigatorOnPush(context, const HomeScreen()),
                     ),
                   ],

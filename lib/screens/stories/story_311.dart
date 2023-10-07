@@ -39,8 +39,7 @@ class Story311 extends StatelessWidget {
                 child: ListView(
                   children: [
                     ContentText(
-                      text:
-                          "진통제 옆에 영어로\n‘백신'이라고 적힌\n문서를 발견했다.\n백신이라고?\n더 자세히 볼까?",
+                      text: "진통제 옆에 영어로 ‘백신'이라고 적힌 문서를 발견했다. 백신이라고? 더 자세히 볼까?",
                       color: Theme.of(context).primaryColor,
                     ),
                   ],

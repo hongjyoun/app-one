@@ -59,7 +59,7 @@ class Story702 extends ConsumerWidget {
                     Column(
                       children: [
                         ContentText(
-                          text: "'또각 또각..'\n내 구두 소리에\n위층에 있던 좀비들이\n내려오고 있다.",
+                          text: "'또각 또각..'\n내 구두 소리에 위층에 있던 좀비들이 내려오고 있다.",
                           color: Theme.of(context).primaryColor,
                         ),
                       ],

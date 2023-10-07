@@ -44,7 +44,7 @@ class Story111 extends StatelessWidget {
                       children: [
                         ContentText(
                           text:
-                              "“이 위로는 올라갈 수 없어.\n올라가면 바로 죽음뿐이야”\n오전에 왔었던\n해외바이어 중 한명이\n넋이 나간채 중얼거리고 있었다.",
+                              "“이 위로는 올라갈 수 없어. 올라가면 바로 죽음뿐이야”\n오전에 왔었던 해외바이어 중 한명이 넋이 나간채 중얼거리고 있었다.",
                           color: Theme.of(context).primaryColor,
                         ),
                       ],

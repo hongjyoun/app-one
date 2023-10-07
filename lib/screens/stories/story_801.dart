@@ -41,7 +41,7 @@ class Story801 extends StatelessWidget {
                     Column(
                       children: [
                         ContentText(
-                          text: "바로 옆에 있는 문으로 나가면\n엘레베이터를 타고\n이동할 수 있을거야!",
+                          text: "바로 옆에 있는 문으로 나가면 엘레베이터를 타고 이동할 수 있을거야!",
                           color: Theme.of(context).primaryColor,
                         ),
                       ],
